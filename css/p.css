@@ -189,7 +189,7 @@ h3{
 
 }
 .banner{
-    background-image: url(images/header21.jpg);
+    background-image: url(../images/header21.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     height: 300px;
