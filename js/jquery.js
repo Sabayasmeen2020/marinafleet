@@ -13,7 +13,7 @@ $(document).ready(function(){
     <div class="flip-card-back">
 
       <h5 class="card-title" >${i.name}</h5>
-        <p class="card-text">${i.price}</p>
+        <p class="card-text1">${i.price}</p>
           <p class="card-text">${i.details}</p>
           <button class="btm" onclick="viewproduct(${i.id})">DETAILS</button> </div>
     </div>
@@ -39,7 +39,7 @@ $(document).ready(function(){
   <div class="flip-card-back">
 
     <h5 class="card-title" >${i.name}</h5>
-      <p class="card-text">${i.price}</p>
+      <p class="card-text1">${i.price}</p>
         <p class="card-text">${i.details}</p>
         <button class="btm" onclick="viewproduct(${i.id})">DETAILS</button> </div>
   </div>

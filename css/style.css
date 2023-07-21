@@ -162,7 +162,7 @@ text-decoration: 1px 1px 1px ;
   height: 30vh;
   margin-top: 50px;
   background-image: url(../images/s22.jpg) ;
-  background-color: rgba(0, 0, 0,.6);
+  background-color: rgba(141, 205, 209, 0.6);
   background-blend-mode: darken;
  
 }
@@ -196,6 +196,31 @@ text-decoration: 1px 1px 1px ;
   /*banner end*/
  
             
+ .display .view{
+    position: absolute;
+    /* bottom: 0.023px; */
+    left: 50%;
+    margin-top: 40%;
+   font-size: 17px;
+   transform: translateX(-50%);
+   padding:4px 10px;
+   width: 20%;
+   text-transform: capitalize;
+   text-align:center;
+   justify-content: center;
+   color: rgba(0, 0, 0, 0.979);
+   border: none;
+   outline: none;
+   font-weight: 700;
+   text-decoration: none;
+   background-color: rgba(130, 179, 202, 0.377);
+   border-radius: 5px;
+   box-shadow: 1px 1px 1px black;
  
+}
+.view:hover{
+    background-color: rgba(0, 0, 0, 0.938);
+    color: rgba(255, 255, 255, 0.952);
+}
 
 
