@@ -198,3 +198,10 @@ h3{
 .card-title{
     text-shadow: 2px 2px 1px black;
 }
+.card-text1{
+    font-size: 22px ;
+    padding-top: 12px;
+    padding-bottom: 1px;
+    background-color: #ffffff8e;
+    box-shadow: 0.5px 0.5px 5px rgb(79, 184, 170);
+}
