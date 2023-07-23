@@ -1,6 +1,6 @@
-body{
+/* body{
     background-color: #baece0 ;
-}
+} */
 
 
 
@@ -22,11 +22,11 @@ body{
     margin-top: 10px;
     vertical-align: middle;
     width: 100%;
-    filter: grayscale(0.8) brightness(0.8);
+    filter: grayscale(1) brightness(0.8);
     border-radius: 2px;
     cursor: pointer;
     transition: 0.3s linear;
-    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
   }
   .column img:hover {
     filter: grayscale(0);
