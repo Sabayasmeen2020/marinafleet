@@ -199,8 +199,8 @@ text-decoration: 1px 1px 1px ;
  .display .view{
     position: absolute;
     /* bottom: 0.023px; */
-    left: 50%;
-    margin-top: 40%;
+    left: 70%;
+    margin-top: 35%;
    font-size: 17px;
    transform: translateX(-50%);
    padding:4px 10px;
@@ -208,12 +208,12 @@ text-decoration: 1px 1px 1px ;
    text-transform: capitalize;
    text-align:center;
    justify-content: center;
-   color: rgba(0, 0, 0, 0.979);
+   color: rgba(0, 0, 0, 1);
    border: none;
    outline: none;
    font-weight: 700;
    text-decoration: none;
-   background-color: rgba(130, 179, 202, 0.377);
+   background-color: rgba(130, 179, 202, 1);
    border-radius: 5px;
    box-shadow: 1px 1px 1px black;
  
@@ -221,6 +221,75 @@ text-decoration: 1px 1px 1px ;
 .view:hover{
     background-color: rgba(0, 0, 0, 0.938);
     color: rgba(255, 255, 255, 0.952);
+
 }
+/* DISPLAY HEAD START*/
+#heading{
+  top: 250px;
+  margin-left: 55%;
+  position: absolute;
+}
+#heading h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  display: block;
+  width: fit-content;
+  position: relative;
+  color: transparent;
+  animation: text_reveal .5s ease forwards;
+}
+#heading h1:nth-child(1){
+  animation-delay: 1s;
+  
+}
+#heading h1:nth-child(2){
+  animation-delay: 2s;
+
+}
+#heading h1:nth-child(3){
+  animation-delay: 3s;
+
+}
+#heading h1 span{
+  position: absolute;
+  width: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgb(197, 155, 63);
+  animation: text_reveal_box 1s ease;
+}
+#heading h1:nth-child(1) span{
+  animation-delay: 0.5s;
+}#heading h1:nth-child(2) span{
+  animation-delay: 1.5s;
+}#heading h1:nth-child(3) span{
+  animation-delay: 2.5s;
+}
+@keyframes text_reveal{
+
+  100%{
+      
+      color: white;
+  }
+}
+@keyframes text_reveal_box{
+  0%{
+      width: 0%;
+      left: 0%;
+  }
+  50%{
+      width: 100%;
+      left: 0%;
+  }
+  100%{
+      width:0%;
+      left:100%;
+  }
+}
+
+
+/* DISPLAY HEAD END */
 
 
