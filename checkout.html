@@ -60,8 +60,26 @@ font-size: 1.25rem;
 
 }
 body{
+    background: url(images/foamvideo.mp4);
 
 }
+#background-video{
+    background: url(images/foamvideo.mp4.gif);
+}
+.checkout{
+    position: absolute;
+    height: 570px;
+    width: 40%;
+    background-color: #00000075;
+    top: 225px;
+    margin-left: 53%;
+
+}
+.container1{
+    height: 570px;
+    width: 100%;
+}
+
 </style>
 
 
@@ -117,13 +135,14 @@ body{
         </header>
 
 
+<!-- video -->
+<div class="container1">
+        <video id="background-video" autoplay loop muted poster="images/foamvideo.mp4" width="100%">
+            <source src="images/foamvideo.mp4" type="video/mp4">
+            </video></div>
+<!-- form -->
 
-
-
-
-<!-- foam -->
-
-    <div class="container" style="height: 500px; width: 50%; background-color: black;margin-top: 80px;margin-left: 469px;">
+    <div class="container checkout"  >
 
     </div>
 </body>
