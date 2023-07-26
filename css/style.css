@@ -257,7 +257,8 @@ text-decoration: 1px 1px 1px ;
   top: 0;
   left: 0;
   height: 100%;
-  background-color: rgb(197, 155, 63);
+  background-color: rgba(83, 170, 182, 0.432)
+  ;
   animation: text_reveal_box 1s ease;
 }
 #heading h1:nth-child(1) span{
