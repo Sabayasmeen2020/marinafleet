@@ -1,5 +1,527 @@
+<!DOCTYPE html>
+<html>
 
-<link rel="stylesheet" href="./css/gallery123.css">
-        
-      
-      
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/gallery123.css">
+  <title>document</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+    <section class="head">
+        <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="100">
+          <header class="header-wrapper">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                   <img src="images/piici-removebg-preview (2).png" style="width: 100px; height: 55px;">
+                   <b style="color: #0d444e;font-size: 21px;text-transform:capitalize;"> Marina fleet</b>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                      <i class="fa-sharp fa-solid fa-bars-staggered "></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                      <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="gallery123.html">Gallery</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fleets
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " style="color:#032324;"  href="cards.html"><b>Luxury Ships</b></a></li>
+                            <li><a class="dropdown-item" style="color: #032324;" href="#"><b>Sailing Ships</b></a></li>
+                            <li><a class="dropdown-item" style="color:#032324;" href="#"><b>Military Ships</b></a></li>
+                            <li><a class="dropdown-item" style="color:#032324;" href="#"><b>Fishing ships</b></a></li>
+                          </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">AboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          
+          </header>
+      </section>
+       <!-- BANNER -->
+    
+    <img src="images/gallery banner.jpg" alt="" style="width: 100%;">
+    <br><br><br>
+         <h2 style="display: flex; justify-content: center; align-items: center;"><i>DISCOVER THE BEST CRUISE SHIPS</i></h2>
+         <h1 style="display: flex; justify-content: center; align-items: center;" ><i>OUR EXCLUSIVE GALLERY</i></h1><br>
+         <P  style="display: flex; justify-content: center; align-items: center; margin-left: 80px;  margin-right: 80px;"><u>There are so many reasons to get excited about a Royal Caribbean® cruise. Choose from itineraries that take you to top-rated vacation destinations, from sun-soaked Caribbean isles to ancient temples in Asia and everywhere in between. Make the most out of every moment at sea while traveling onboard the world s best cruise ship, dazzling entertainments , as well as next-level dining and unmatched activities for all kinds of adventure-seekers. No matter , this is a fleets filled with incredible feats.</u>
+ 
+         </P>
+       
+     <br>
+       <!-- BANNER end -->
+     
+  <script src="https://unpkg.com/vue@2.6.14/dist/vue.js"></script>
+
+  <script>
+    // CSS
+    const css = `
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 1em;
+  text-align: center;
+  font-family: system-ui, sans-serif;
+  margin-left:120px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image {
+    width: 350px;
+    height: 380px;
+    margin: 10px;
+    background-size: cover;
+    cursor: zoom-in;
+    filter: grayscale(0);
+    transition: 0.5 ease;
+    
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.image:hover{
+  filter: grayscale(0.3) brightness(0.5);
+      transform: scale(1.06);
+}
+
+.hashtag {
+  margin: 6px;
+  cursor: pointer;
+  opacity: 0.7;
+  font-size:28px;
+  bottom:30;
+}
+
+.hashtag:hover {
+  opacity: 1;
+}
+
+#fullscreenImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#fullscreenImage img {
+  max-width: 90%;
+  max-height: 90%;
+  cursor: zoom-out;
+}
+
+.fullscreen-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.fullscreen-nav:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.nav-left {
+  left: 2%;
+}
+
+.nav-right {
+  right: 2%;
+}
+`;
+    // Usage
+    const styleElement = document.createElement('style');
+    styleElement.innerHTML = css;
+    document.head.appendChild(styleElement);
+  </script>
+  <div id="app" class="app">
+    <div>
+      <span class="hashtag" v-for="tag in hashtags" :key="tag" @click="filterImages(tag)">{{ tag }}</span>
+    </div>
+    
+    <div class="gallery">
+      <div class="image" v-for="(image, index) in filteredImages" :key="index" :style="{ backgroundImage: 'url(' + image.url + ')', opacity: 1 }" @click="openImage(index)"></div>
+    </div>
+    <div id="fullscreenImage" v-if="fullscreenImageUrl" @click="fullscreenImageUrl = null">
+      <img :src="fullscreenImageUrl" />
+      <span class="fullscreen-nav nav-left" @click.stop="previousImage">&#10094;</span>
+      <span class="fullscreen-nav nav-right" @click.stop="nextImage">&#10095;</span>
+    </div>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        images:
+        // 1
+        [ {
+            url: 'images/splashc1.jpg',
+            tags: ['Luxury'],
+          },
+        //   2
+          {
+            url: 'images/splashl19.jpg',
+            tags: ['Luxury']
+          },
+        //   3
+          {
+            url: 'images/splashf12.jpg',
+            tags: ['Fishing']
+          },
+            //   4
+            {
+            url: 'images/splashl18.jpg',
+            tags: ['Luxury']
+          },
+            //   5
+            {
+            url: 'images/splashf16.jpg',
+            tags: ['Fishing']
+          },
+            //   6
+            {
+            url: 'images/splashs6.jpg',
+            tags: ['Sailing']
+          },
+       
+            //   7
+            {
+            url: 'images/splashc4.jpg',
+            tags: ['Luxury']
+          }, 
+           
+            //   8
+            {
+            url: 'images/splashl17.jpg',
+            tags: ['Luxury']
+          },
+          //    9 
+          {
+            url: 'images/splashm13.jpg',
+            tags: ['Militery']
+          },
+         
+            //   10
+            {
+            url: 'images/splashm10.jpg',
+            tags: ['Militery']
+          },
+            //   11
+            {
+            url: 'images/splashc5.jpg',
+            tags: ['Luxury']
+          },
+          
+            //   12
+          {
+            url: 'images/c2.jpg',
+            tags: ['Luxury']
+          },
+            //   13
+          {
+            url: 'images/splashf10.jpg',
+            tags: ['Fishing']
+          },
+            //   14
+            {
+            url: 'images/splashl22.jpg',
+            tags: ['Luxury']
+          },
+        //   14.5
+        {
+            url: 'images/gsailing1.jpg',
+            tags: ['Sailing']
+          },
+            //   15
+          {
+            url: 'images/splashf11.jpg',
+            tags: ['Fishing']
+          },
+            //   16
+         {
+            url: 'images/splashf13.jpg',
+            tags: ['Fishing']
+          },
+            //   17
+            {
+            url: 'images/splashl20.jpg',
+            tags: ['Luxury']
+          },
+            //   18
+          {
+            url: 'images/splashf15.jpg',
+            tags: ['Fishing']
+          },
+            //   19
+            {
+            url: 'images/splashc7.jpg',
+            tags: ['Luxury']
+          },
+            //   20
+            {
+            url: 'images/splashc2.jpg',
+            tags: ['Luxury']
+          },
+        //    20.5
+        {
+            url: 'images/gsailing2.jpg',
+            tags: ['Sailing']
+          },
+            //   21
+            {
+            url: 'images/g2edit.jpg',
+            tags: ['Fishing']
+          },
+            //  22
+            {
+            url: 'images/g9.jpg',
+            tags: ['Fishing']
+          },
+            //   23
+          {
+            url: 'images/splashl21.jpg',
+            tags: ['Luxury']
+          },
+            //   24
+            {
+            url: 'images/splashs4.jpg',
+            tags: ['Sailing']
+          },
+           
+            //   25
+          {
+            url: 'images/splashl23.jpg',
+            tags: ['Luxury']
+          },
+            //   26
+          {
+            url: 'images/splashm9.jpg',
+            tags: ['Militery']
+          },
+            //   27
+            {
+            url: 'images/splashc3.jpg',
+            tags: ['Luxury']
+          },
+            //   28
+            
+          {
+            url: 'images/splashm12.jpg',
+            tags: ['Militery']
+          },
+            //   29
+            {
+            url: 'images/splashf14.jpg',
+            tags: ['Fishing']
+          },
+            //   30
+            {
+            url: 'images/g1edit.jpg',
+            tags: ['Fishing']
+          },
+            //   31
+          {
+            url: 'images/splashs5.jpg',
+            tags: ['Sailing']
+          }
+        ],
+        currentTag: 'all',
+        fullscreenImageUrl: null,
+        fullscreenImageIndex: null
+      },
+      computed: {
+        hashtags() {
+          const tags = new Set();
+          this.images.forEach(image => image.tags.forEach(tag => tags.add(tag)));
+          return Array.from(tags);
+        },
+        filteredImages() {
+          return this.currentTag === 'all' ?
+            this.images :
+            this.images.filter(image => image.tags.includes(this.currentTag));
+        }
+      },
+      methods: {
+        filterImages(tag) {
+          this.currentTag = tag;
+        },
+        openImage(index) {
+          this.fullscreenImageUrl = this.filteredImages[index].url;
+          this.fullscreenImageIndex = index;
+        },
+        previousImage() {
+          if (this.fullscreenImageIndex > 0) {
+            this.fullscreenImageIndex--;
+            this.fullscreenImageUrl = this.filteredImages[this.fullscreenImageIndex].url;
+          }
+        },
+        nextImage() {
+          if (this.fullscreenImageIndex < this.filteredImages.length - 1) {
+            this.fullscreenImageIndex++;
+            this.fullscreenImageUrl = this.filteredImages[this.fullscreenImageIndex].url;
+          }
+        }
+      }
+    });
+  </script>
+ <!-- Footer  -->
+ <footer class=" container-fluid my-5 mb-0 text-center text-lg-start "
+ style=" background-size: contain; background-color: #a9cec4;">
+
+ <!-- Section: Social media -->
+ <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom f-bg ">
+   <!-- Left -->
+   <div class="me-5 d-none d-lg-block">
+     <span><b>Get connected with us on social networks:</b></span>
+   </div>
+   <!-- Left -->
+
+   <!-- Right -->
+   <div>
+     <a href="https://www.facebook.com/profile.php?id=100085838613136" class="me-4 text-reset">
+       <ion-icon name="logo-facebook"></ion-icon>
+     </a>
+     <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+       <ion-icon class="i" name="logo-twitter"></ion-icon>
+     </a>
+     <a href="https://www.dawateislami.net/downloads/islamic-apps/al-quran-translation-app?gclid=Cj0KCQjwsIejBhDOARIsANYqkD1pcx4fkne2n1cu9ZXD1fMqk_TQqkqXfuB9Z5PmeWrzkhTim2ZFw9AaAlZZEALw_wcB"
+       class="me-4 text-reset">
+       <ion-icon name="logo-google"></ion-icon>
+     </a>
+     <a href="https://instagram.com/muzammil____07?igshid=ZGUzMzM3NWJiOQ==" class="me-4 text-reset">
+       <ion-icon class="i" name="logo-instagram"></ion-icon>
+     </a>
+     <a href="www.aptech4@gmail.com" class="me-4 text-reset">
+       <ion-icon name="link-outline"></ion-icon>
+     </a>
+     <a href="www.aptech@gmail.com" class="me-4 text-reset">
+       <ion-icon name="thumbs-up-sharp"></ion-icon>
+     </a>
+   </div>
+   <!-- Right -->
+ </section>
+ <!-- Section: Social media -->
+
+ <!-- Section: Links  -->
+ <section>
+   <div class="container text-center text-md-start mt-5">
+     <!-- Grid row -->
+     <div class="row mt-3">
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+         <!-- Content -->
+         <h6 class="text-uppercase fw-bold mb-4">
+
+           <h1>Marina-Fleet</h1>
+           The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the
+           Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and defensive
+           maritime employment
+         </h6>
+
+       </div>
+       <!-- Grid column -->
+
+
+       <!-- Grid column -->
+       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+         <p>
+           <span class="sign">&#x27A4;</span><a href="FAQs.html" class="text-reset">Home</a>
+         </p>
+         <p>
+           <span class="sign">&#x27A4;</span><a href="about-us.html" class="text-reset">About us</a>
+         </p>
+         <p>
+           <span class="sign">&#x27A4;</span><a href="#" class="text-reset">Contact us</a>
+         </p>
+         <p>
+           <span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Site map</a>
+         </p>
+         <span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Feed back</a>
+         </p>
+       </div>
+       <!-- Grid column -->
+
+
+
+       <!-- Grid column -->
+       <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+         <!-- Links -->
+         <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+         <p>
+           <ion-icon name="globe-sharp"></ion-icon></i>ALL OVER PAKISTAN
+         </p>
+         <p>
+           <ion-icon name="logo-android"></ion-icon></i><a href="nihasiddiqui98gmail.com"
+             class="text-reset">www.aptechnn@gmail.com</a>
+         </p>
+         <p><ion-icon name="call-outline"></ion-icon> + 92 309 210242453</p>
+         <p><ion-icon name="call-outline"></ion-icon>+ 92 334 820976525</p>
+       </div>
+       <!-- Grid column -->
+     </div>
+     <!-- Grid row -->
+   </div>
+ </section>
+ <!-- Section: Links  -->
+
+ <!-- Copyright -->
+ <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+
+   <ion-icon name="cloud-offline-sharp"></ion-icon>
+   <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© Copyright Marina-Fleet.<br>
+     All Rights Reserved <br>
+     Designed by Marina Fleet</a>
+ </div>
+ <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</body>
+
+</html>

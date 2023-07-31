@@ -70,11 +70,23 @@ body{
     position: absolute;
     height: 570px;
     width: 40%;
-    background-color: #00000075;
+    background: radial-gradient(#45cfc844,#00000070,#00000060);
     top: 225px;
     margin-left: 53%;
+    animation: bg-animation 50s alternate infinite;
+    background-size: 400% 400%;
+background-position: 100% 100%;
 
 }
+@keyframes bg-animation {
+from {
+background-position:0% 0%;
+}
+to{
+background-position: 400% 400%;}}
+
+
+
 .container1{
     height: 570px;
     width: 100%;
@@ -137,13 +149,178 @@ body{
 
 <!-- video -->
 <div class="container1">
-        <video id="background-video" autoplay loop muted poster="images/foamvideo.mp4" width="100%">
+        <video id="background-video" autoplay loop muted  width="100%">
             <source src="images/foamvideo.mp4" type="video/mp4">
             </video></div>
 <!-- form -->
 
     <div class="container checkout"  >
+      <form action="" class="p-5 mt-2 mx-auto">
+        <h1><b>registration form</b></h1>
+        <input type="text" name="username" id="username" class=" add form-control mt-2" placeholder="Enter Your First Name">
+        <input type="email" name="email" id="email" class="add form-control mt-2" placeholder="Enter Email">
+        <input type="number" pattern="/d+" name="phone" id="phone" class="add form-control mt-2" placeholder="Enter The Phone Number">
+        
+        <br><br>
+        <button class="btn bg-info">Submit</button>
+        
+        
+        </form>
+    </div>
+    <div class="container" style="height: 140px; width: 100%; background-color: #000000;" >
 
     </div>
+    <div class="contaiiner" style="height: 200px; width: 100%; background-color: #000000;">
+      <!-- Footer  -->
+      <footer class=" container-fluid my-5 mb-0 text-center text-lg-start "
+      style=" background-size: contain; background-color: #a9cec4;">
+  
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom f-bg ">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span><b>Get connected with us on social networks:</b></span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="https://www.facebook.com/profile.php?id=100085838613136" class="me-4 text-reset">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+            <ion-icon class="i" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://www.dawateislami.net/downloads/islamic-apps/al-quran-translation-app?gclid=Cj0KCQjwsIejBhDOARIsANYqkD1pcx4fkne2n1cu9ZXD1fMqk_TQqkqXfuB9Z5PmeWrzkhTim2ZFw9AaAlZZEALw_wcB"
+            class="me-4 text-reset">
+            <ion-icon name="logo-google"></ion-icon>
+          </a>
+          <a href="https://instagram.com/muzammil____07?igshid=ZGUzMzM3NWJiOQ==" class="me-4 text-reset">
+            <ion-icon class="i" name="logo-instagram"></ion-icon>
+          </a>
+          <a href="www.aptech4@gmail.com" class="me-4 text-reset">
+            <ion-icon name="link-outline"></ion-icon>
+          </a>
+          <a href="www.aptech@gmail.com" class="me-4 text-reset">
+            <ion-icon name="thumbs-up-sharp"></ion-icon>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+  
+                <h1>Marina-Fleet</h1>
+                The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the
+                Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and defensive
+                maritime employment
+              </h6>
+  
+            </div>
+            <!-- Grid column -->
+  
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <span class="sign">&#x27A4;</span><a href="FAQs.html" class="text-reset">Home</a>
+              </p>
+              <p>
+                <span class="sign">&#x27A4;</span><a href="about-us.html" class="text-reset">About us</a>
+              </p>
+              <p>
+                <span class="sign">&#x27A4;</span><a href="#" class="text-reset">Contact us</a>
+              </p>
+              <p>
+                <span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Site map</a>
+              </p>
+              <span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Feed back</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+  
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>
+                <ion-icon name="globe-sharp"></ion-icon></i>ALL OVER PAKISTAN
+              </p>
+              <p>
+                <ion-icon name="logo-android"></ion-icon></i><a href="nihasiddiqui98gmail.com"
+                  class="text-reset">www.aptechnn@gmail.com</a>
+              </p>
+              <p><ion-icon name="call-outline"></ion-icon> + 92 309 210242453</p>
+              <p><ion-icon name="call-outline"></ion-icon>+ 92 334 820976525</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+  
+        <ion-icon name="cloud-offline-sharp"></ion-icon>
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© Copyright Marina-Fleet.<br>
+          All Rights Reserved <br>
+          Designed by Marina Fleet</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer --></div>
+    <script>
+
+              $.validator.addMethod("email",function(){
+                  return /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+              },"Minimum * Characters, 1 Capital and small letter and one number");
+      
+          $("form").validate({
+              rules:{
+                  username:{
+                      required:true,
+                     
+                  },
+                  email:{
+                      required:true,
+                      email:true
+                  
+                  },
+                  phone:{
+                      required:true,
+                      min:11
+                  }
+              },
+              messges:{
+                  username:{
+                      required:"username field is required"
+                  },
+                  email:{
+                      required:"email is required"
+                  
+                  },
+                  phone:{
+                      required:"phone number is required"
+                  }
+              }
+          })
+      
+          </script>
+          
 </body>
 </html>
