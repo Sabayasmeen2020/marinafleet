@@ -43,11 +43,11 @@ text-shadow: 3px 3px 5px rgb(253, 255, 255);
 font-size: 1.25rem;
 
 }
-img .pic{
+.related img {
     transition: 0.5 ease;
   }
-  img .pic:hover{
-    transform: scale(1.5);
+  .related img:hover{
+    transform: scale(1.1);
   }
    body {
     background: #DFC2F2;
