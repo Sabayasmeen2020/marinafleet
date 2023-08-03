@@ -198,9 +198,9 @@ h3{
   
   
   #projects .parallax {
-     background-image: url(../images/cardbanner6.jpg);
+     background-image: url(../images/pexels-arvid-knutsen-3511307.jpg);
     width: 100%;
-    height: 63vh;
+    height: 70vh;
     /* position: relative; */
     background-attachment: fixed;
     /* background-position: 50% 50%; */
@@ -209,6 +209,53 @@ h3{
   
  
   }
+  #projects h2{
+    font-size:20px ;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    margin: 0 0 10px;
+   opacity: 0;
+   animation:fadeInLeft 0.5s ease forwards;
+   text-transform: capitalize;
+   margin-left:530px;
+   text-decoration: 1px solid underline black;
+}
+
+#projects p{
+    font-size:55px ;
+    color:  rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgb(255, 255, 255);
+    margin: 0;
+    animation:fadeInRight 0.8s ease forwards;
+    text-transform: capitalize;
+    background-color: #ffffff6c;
+}
+#projects.parallax.active h2{
+ animation:fadeInLeft 0.5s ease forwards;
+}
+
+
+@keyframes fadeInLeft{
+   0%{
+       opacity: 0;
+       transform: translateX(-30px);
+   }
+   100%{
+       opacity: 1;
+       transform: translateX(0px);
+   }
+   }
+
+   @keyframes fadeInRight{
+   0%{
+       opacity: 0;
+       transform: translateX(30px);
+   }
+   100%{
+       opacity: 1;
+       transform: translateX(0px);
+   }
+   }
   section:nth-child(1) {
     background-image: var(--image-one);
 

@@ -7,18 +7,244 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fishingview.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 </head>
 <body>
-    <div class="container">
-        <img id="image" src="" alt="">
-        <h1 id="name"></h1>
-        <p id="details"></p>
-        <p id="size"></p>
-        <p id="price"></p>
+    <section class="head">
+        <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="100">
+          <header class="header-wrapper">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                   <img src="images/piici-removebg-preview (2).png" style="width: 100px; height: 55px;">
+                   <b style="color: #0d444e;font-size: 21px;text-transform:capitalize;"> Marina fleet</b>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <!-- <span class="navbar-toggler-icon"></span> -->
+                      <i class="fa-sharp fa-solid fa-bars-staggered "></i>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                      <ul class="navbar-nav menu-navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                        </li>
     
+                        <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="gallery123.html">Gallery</a>
+                        </li>
+    
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Fleets
+                          </a>
+                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item " style="color:#032324;"  href="card.html"><b>Luxury Ships</b></a></li>
+                            <li><a class="dropdown-item" style="color: #032324;" href="#"><b>Sailing Ships</b></a></li>
+                            <li><a class="dropdown-item" style="color:#032324;" href="militraycard.html"><b>Military Ships</b></a></li>
+                            <li><a class="dropdown-item" style="color:#032324;" href="fishing.html"><b>Fishing ships</b></a></li>
+                          </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">AboutUs</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">ContactUs</a>
+                        </li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+          
+          </header>
+ <!-- header end -->
+      <br>
+ <!-- luxury cruise -->
+    <div class="container">
+        <div class="row">
+            <div class="pic col-md-6">
+        <img id="image" src="" alt="" style="height: 800px;width: 100%;box-shadow: 2px 2px 15px black;">
+    </div>
+    <div class="col-md-6">
+        <h1 id="name" style="font-size:58px;margin-top: 18px;display: flex;align-items: center;justify-content: center;margin-left: 20px;"></h1><hr class="w-50  mx-auto">
+       <h3 style="font-size:22px;text-transform: uppercase;margin-top: 30px;display: flex;align-items: center;justify-content: center;margin-left: 20px;">detail:</h3><hr class="w-25  mx-auto"style="color: #207685;">
+       <p id="details" style="font-size:18px;margin-left: 24px;align-items: center;display: flex;align-items: center;justify-content: center;margin-left: 50px;"></p>
+       <h3  style="font-size:22px;text-transform: uppercase;display: flex;align-items: center;justify-content: center;" >cost:</h3>
+       <p id="price" style="font-size: larger;display: flex;align-items: center;justify-content: center;"></p>
+ <!--buy Button trigger modal -->
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+style="width: 50%;background-color: rgb(103, 161, 158);margin-left: 143px; text-transform: uppercase;font-size: 15px;">
+ <b>Buy Now</b>
+</button>
+
+<!--buy Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hi Customer!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
       </div>
+      <div class="modal-body" >
+       <b style="margin-left: 140px;font-size: 20px;">Kindly Fill the form!<br>
+       <div class="container checkout" >
+<!-- form -->
+        <form action="" class="mt-2 mx-auto"><br>
+           <img src="images/piici-removebg-preview (2).png" style="width: 60%; height: 140px;margin-left: 75px;"> <h1><b></b></h1><br>
+          <input type="text" style="background-color: #a9cec4ad; color: rgb(0, 0, 0);" name="username" id="username" class="inputt add form-control mt-2" placeholder="Enter Your First Name">
+          <input type="email"style="background-color: #a9cec4ad; color: rgb(0, 0, 0);" name="email" id="email" class="inputt add form-control mt-2" placeholder="Enter Email">
+          <input type="number"style="background-color: #a9cec4ad; color: rgb(0, 0, 0);" pattern="/d+" name="phone" id="phone" class="inputt add form-control mt-2" placeholder="Enter The Phone Number">
+          <br>
+          <button class="btn" style="margin-left: 150px;font-size: 20px;padding:1px 20px;background-color: #296570;color: aliceblue;">Submit</button>
+          
+       </form>
+      </div></b> 
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- rent -->
+        <h2 style="font-size:33px;text-transform: uppercase;margin-top: 30px;display: flex;align-items: center;justify-content: center;">available for rent</h2><hr class="w-25  mx-auto"style="color: #207685;">
+        <h3 style="font-size:22px;text-transform: uppercase;margin-top: 30px;display: flex;align-items: center;justify-content: center;">Facilities:</h3><hr class="w-25  mx-auto " style="color: #207685;">
+      <p style="font-size:16px;display: flex;align-items:center ;justify-content: center;margin-left: 30px;">Modern Design, Floor-to-Ceiling Sliding Glass Doors
+        Largest Staterooms in the Industry
+        Private Balconies
+        Multiple Lounges with Panoramic Views
+        Spacious Sun Decks
+        Single Seating Dining Room
+        Breakfast Room Service
+        Contemporary Styling Throughout
+        Elevator Service to All Decks</p>
+        <h3 style="font-size:22px;text-transform: uppercase;display: flex;align-items: center;justify-content: center;">rent for one week:</h3>
+        <p id="rent" style="font-size: larger;display: flex;align-items: center;justify-content: center;"></p>
+       <!--rent Button trigger modal -->
+         <button type="button " class="btn btn-classic" style="width: 50%;background-color: rgb(103, 161, 158);margin-left: 143px; text-transform: uppercase;font-size: 15px;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+         <b> Rent Now</b>
+           </button>
+           </div>
+             </div>
+             </div>
+
+
+       <!-- Footer  -->
+    <footer class=" container-fluid my-5 mb-0 text-center text-lg-start "
+    style=" background-size: contain; background-color: #a9cec4;">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom f-bg ">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span><b>Get connected with us on social networks:</b></span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/profile.php?id=100085838613136" class="me-4 text-reset">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+          <ion-icon class="i" name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://www.dawateislami.net/downloads/islamic-apps/al-quran-translation-app?gclid=Cj0KCQjwsIejBhDOARIsANYqkD1pcx4fkne2n1cu9ZXD1fMqk_TQqkqXfuB9Z5PmeWrzkhTim2ZFw9AaAlZZEALw_wcB"
+          class="me-4 text-reset">
+          <ion-icon name="logo-google"></ion-icon>
+        </a>
+        <a href="https://instagram.com/muzammil____07?igshid=ZGUzMzM3NWJiOQ==" class="me-4 text-reset">
+          <ion-icon class="i" name="logo-instagram"></ion-icon>
+        </a>
+        <a href="www.aptech4@gmail.com" class="me-4 text-reset">
+          <ion-icon name="link-outline"></ion-icon>
+        </a>
+        <a href="www.aptech@gmail.com" class="me-4 text-reset">
+          <ion-icon name="thumbs-up-sharp"></ion-icon>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+
+              <h1>Marina-Fleet</h1>
+              The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the
+              Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and defensive
+              maritime employment
+            </h6>
+
+          </div>
+          <!-- Grid column -->
+
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+            <p>
+              <span class="sign">&#x27A4;</span><a href="FAQs.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <span class="sign">&#x27A4;</span><a href="about-us.html" class="text-reset">About us</a>
+            </p>
+            <p>
+              <span class="sign">&#x27A4;</span><a href="#" class="text-reset">Contact us</a>
+            </p>
+            <p>
+              <span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Site map</a>
+            </p>
+            <span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Feed back</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>
+              <ion-icon name="globe-sharp"></ion-icon></i>ALL OVER PAKISTAN
+            </p>
+            <p>
+              <ion-icon name="logo-android"></ion-icon></i><a href="nihasiddiqui98gmail.com"
+                class="text-reset">www.aptechnn@gmail.com</a>
+            </p>
+            <p><ion-icon name="call-outline"></ion-icon> + 92 309 210242453</p>
+            <p><ion-icon name="call-outline"></ion-icon>+ 92 334 820976525</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+
+      <ion-icon name="cloud-offline-sharp"></ion-icon>
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© Copyright Marina-Fleet.<br>
+        All Rights Reserved <br>
+        Designed by Marina Fleet</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    
       <script src="js/fishingviewproduct.js"></script>
 </body>
 </html>

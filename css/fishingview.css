@@ -1,11 +1,13 @@
-.dropdown-menu{
+ /* header css start*/
+ 
+ .dropdown-menu{
     background-color: rgba(83, 170, 182, 0.432);
    box-shadow: 1px 2px 10px #000000;
    text-shadow: 0.075px 0.076px 0.075px black;
 }
 
 .header-wrapper{
-position: contain;
+position: relative;
 padding: .9380rem;
 background-color:    #a9cec4;
 box-shadow: 0.5rem .375rem -0.375rem rgb(0, 0, 0)  ;
@@ -13,7 +15,6 @@ box-shadow: 0.5rem .375rem -0.375rem rgb(0, 0, 0)  ;
 transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
 width: 100%;
 box-shadow: 3px 3px 12px black;
-
 }
 .header-wrapper .navbar-toggler{
 border: 0;
@@ -43,16 +44,7 @@ text-shadow: 3px 3px 5px rgb(253, 255, 255);
 font-size: 1.25rem;
 
 }
-img .pic{
-    transition: 0.5 ease;
-  }
-  img .pic:hover{
-    transform: scale(1.5);
-  }
-   body {
-    background: #DFC2F2;
-      background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
-      background-attachment: fixed;	
-      background-size: cover;
-      
-      }
+
+
+
+  /* header css end */
