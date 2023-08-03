@@ -11,7 +11,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
   </head>
+  <script>
+
+        $.validator.addMethod("email",function(){
+            return /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/e;
+        },"Minimum * Characters, 1 Capital and small letter and one number");
+
+    $("form").validate({
+        rules:{
+            username:{
+                required:true,
+               
+            },
+            email:{
+                required:true,
+                email:true
+            
+            },
+            phone:{
+                required:true,
+                min:11
+            }
+        },
+        messges:{
+            username:{
+                required:"username field is required" 
+            },
+            email:{
+                required:"email is required"
+            
+            },
+            phone:{
+                required:"phone number is required"
+            }
+        }
+    })
+    </script>
 <body>
     <section class="head">
         <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="100">
@@ -88,11 +127,23 @@ style="width: 50%;background-color: rgb(103, 161, 158);margin-left: 143px; text-
         <h5 class="modal-title" id="exampleModalLabel">Hi Customer!</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" ></button>
       </div>
-      <div class="modal-body" style="margin-left: 80px;">
-       <b>Fill the form!<br>For more checkout the procedure</b> 
+      <div class="modal-body" >
+       <b style="margin-left: 140px;font-size: 20px;">Kindly Fill the form!<br>
+       <div class="container checkout"  >
+        <form action="" class="mt-2 mx-auto"><br>
+           <img src="images/piici-removebg-preview (2).png" style="width: 60%; height: 140px;margin-left: 75px;"> <h1><b></b></h1><br>
+          <input type="text" style="background-color: #a9cec4ad; color: rgb(0, 0, 0);" name="username" id="username" class="inputt add form-control mt-2" placeholder="Enter Your First Name">
+          <input type="email"style="background-color: #a9cec4ad; color: rgb(0, 0, 0);" name="email" id="email" class="inputt add form-control mt-2" placeholder="Enter Email">
+          <input type="number"style="background-color: #a9cec4ad; color: rgb(0, 0, 0);" pattern="/d+" name="phone" id="phone" class="inputt add form-control mt-2" placeholder="Enter The Phone Number">
+          <br>
+          <button class="btn" style="margin-left: 150px;font-size: 20px;padding:1px 20px;background-color: #296570;color: aliceblue;">Submit</button>
+          
+          
+          </form>
+      </div></b> 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn" data-bs-dismiss="modal" style="width: 40%;background-color: rgb(129, 200, 202);margin-right: 130px;" id="Checkout" href="checkout.html"  >Checkout</button>
+  
       
       
       
@@ -100,7 +151,6 @@ style="width: 50%;background-color: rgb(103, 161, 158);margin-left: 143px; text-
     </div>
   </div>
 </div>
-
 <!-- rent -->
         <h2 style="font-size:33px;text-transform: uppercase;margin-top: 30px;display: flex;align-items: center;justify-content: center;">available for rent</h2><hr class="w-25  mx-auto"style="color: #207685;">
         <h3 style="font-size:22px;text-transform: uppercase;margin-top: 30px;display: flex;align-items: center;justify-content: center;">Facilities:</h3><hr class="w-25  mx-auto " style="color: #207685;">

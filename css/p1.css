@@ -49,3 +49,10 @@ img .pic{
   img .pic:hover{
     transform: scale(1.5);
   }
+  body {
+    background: #DFC2F2;
+      background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+      background-attachment: fixed;	
+      background-size: cover;
+      
+      }
