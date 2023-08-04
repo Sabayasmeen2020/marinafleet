@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--css link-->
+    <link rel="stylesheet" href="style abotus.css">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--jquerry-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.bb{
+    height: 100vh;
+    width: 100%;
+    background-color: #7ac1c4
+}
+.btn{
+    border-radius: 20px;
+    background-color: #518385;
+    color: black;
+}
+body{
+    background-color: #c3edf0 ;
+    
+}
+.text-img{
+    position: absolute;
+    top: 250px;
+    color: white;
+    padding: 10px;
+    margin-left: 540px;
+}
+.card{
+    border-radius: 25px;
+}
+.btn{
+    border: none;
+    font-size: 19px;
+    color: rgb(241, 238, 238);
+    background-color: #518385;
+    padding: 5px;
+    border-radius: 6px;
+    margin: 5px; 
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+.btn:hover{
+    background-color: #7ac1c4;
+    box-shadow: 0 5px 35px rgb(101, 104, 104);
+}
+.row #images img{
+transform: scale(1);
+transition: 0.3s ease-in-out;
+}
+.row #images:hover img{
+    transform: scale(1.1);
+}
+p a{
+    text-decoration: none;
+}
+
+.sml{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sml li{
+    list-style: none;
+    margin-left: 15px;
+
+}
+.sml li a{
+    color: #518385;
+    font-size: xx-large;
+    
+
+}
+.sml li a:hover{
+    color: rgb(167, 162, 162);
+}
+#mission i{
+    font-size: 50px;
+    margin-left: 120px;
+    margin-top: 20px;
+}
+.card-image .pic{
+    position: relative;
+    height: 180px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 45px;
+    margin-top: 20px;
+    border: 2px solid #518385;
+
+    
+}
+.card-image .pic:hover{
+    box-shadow: 0 5px 35px rgb(101, 104, 104);
+
+}
+#team:hover{
+background-color: #7ac1c4;
+color: white;
+}
+#mission:hover{
+    background-color: #7ac1c4;
+    color: white;
+}
+#reviews:hover{
+    background-color: #7ac1c4;
+    color: white;
+}
+.card-review .person{
+     position: relative;
+    height: 180px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 2px solid #518385; 
+} 
+.card-review .person:hover{
+    box-shadow: 0 5px 35px rgb(101, 104, 104);
+}
+
+
+<!--header css-->
+
+.dropdown-menu{
+    background-color: rgba(83, 170, 182, 0.432);
+   box-shadow: 1px 2px 10px #000000;
+   text-shadow: 0.075px 0.076px 0.075px black;
+}
+
+.header-wrapper{
+position: contain;
+padding: .9380rem;
+background-color:    #a9cec4;
+box-shadow: 0.5rem .375rem -0.375rem rgb(0, 0, 0)  ;
+-webkit-transition:  background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+width: 100%;
+box-shadow: 3px 3px 12px black;
+
+}
+.header-wrapper .navbar-toggler{
+border: 0;
+color:#518385 ;
+line-height: 2;
+}         
+.header-wrapper .navbar-toggler:focus{
+color: rgba(0, 0, 0, 0.5);
+}
+.header-wrapper .nav-item{
+margin: 0 .625rem;
+}
+.header-wrapper .nav-item .nav-link{
+font-size: 1.25rem;
+font-weight: 500;
+display: inline-block;
+color: #518385;
+text-shadow: 0.25px 0.25px 0.25px black;
+
+}
+.header-wrapper .nav-item .nav-link:hover,
+.header-wrapper .nav-item .nav-link.active{
+color: #0e606e;
+text-decoration: 1px 1px 1px ;
+/* background-color: rgb(9, 92, 92);  */
+text-shadow: 3px 3px 5px rgb(253, 255, 255);
+font-size: 1.25rem;
+
+}
+body{
+    background: url(images/foamvideo.mp4);
+
+}
+#background-video{
+    background: url(images/foamvideo.mp4.gif);
+}
+.checkout{
+    position: absolute;
+    height: 570px;
+    width: 40%;
+    background: radial-gradient(#45cfc844,#00000070,#00000060);
+    top: 225px;
+    margin-left: 53%;
+    animation: bg-animation 50s alternate infinite;
+    background-size: 400% 400%;
+background-position: 100% 100%;
+
+}
+@keyframes bg-animation {
+from {
+background-position:0% 0%;
+}
+to{
+background-position: 400% 400%;}}
+.container1{
+    height: 570px;
+    width: 100%;
+}
+#about{
+    background: #a0c8ca;
+}
+
+
+
+
+
+</style>
+</head>
+<body id="about"> 
+    <body></body>
+    <body data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="100">
+        <header class="header-wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/piici-removebg-preview (2).png" style="width: 100px; height: 55px;">
+                <b style="color: #0d444e;font-size: 21px;text-transform:capitalize;"> Marina fleet</b>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fa-sharp fa-solid fa-bars-staggered "></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav menu-navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="" href="index.html">Home</a>
+                  </li>
+    
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="gallery.html">Gallery</a>
+                  </li>
+    
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Fleets
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" style="color:#032324;" href="card.html"><b>Luxury Ships </b></a></li>
+                      <li><a class="dropdown-item" style="color: #032324;" href=""><b>Sailing Ships</b></a></li>
+                      <li><a class="dropdown-item" style="color:#032324;" href="#"><b>Military Ships</b></a></li>
+                      <li><a class="dropdown-item" style="color:#032324;" href="#"><b>Fishing ships</b></a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AboutUs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ContactUs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+<!--about us-->
+    <section class="main-heading">
+        <div class="text-center">
+            <img src="images/ships1.jpg"  alt="" style="width: 100%; height: 70vh;">
+            <div class="text-img">
+                <h2 style="font-size: 45px;"> About Us</h2>
+                <hr class="w-30  mx-auto">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-6 mt-5" id="images">
+                    <img src="images/ships2.jpeg" alt="" class="img-fluid mt-5" style="width: 90%; height: auto; border-radius: 60px; box-shadow:  0 5px 20px rgb(101, 104, 104);">
+                </div>
+                <div class="col-md-3">
+                    <h1 class="mt-5" class="para" style="color: #518385;"><b>MARINA FLEET</b></h1>
+                    <p>Fleet Marina, Leroy's Marina, is undergoing many renovations. Additions and
+                         upgrades are being made to the marina including the installation of the longest floating 
+                         docks in New Bedford.<br>
+                         The owner of the marina, Lars Vinjerud II (CEO Fleet Fisheries), knows a thing or two
+                          about marinas, as he has been a professional fisherman his whole life and visited dozens
+                           of marinas all over the world in his own sport-fishing boats and yachts.</p>
+                 <a href="#" class="btn"  style="color: white; background-color: #518385;"  data-bs-toggle="tooltip" data-bs-placement="right" title="limited stock" > read more</a>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="mt-5" class="paragraph" style="color: #518385;"><b>WORK WITH US</b></h1><br>
+                    <p>We are an ambitious company and we're always looking for great people to join team - fron personal trainers, group exercise instructors
+                         and club managers to our front-of-house teams.we are commited to training,so you'll be encouraged to improve
+                        your existing skills while you develop new ones.<b style="color: red;"><a href="#"> Click Here</a></b> to find out more.</p>
+                        
+            </div>
+            <p style="color: #518385; font-size: 30px; font-weight: 500; margin-left: 500px; padding-top: 30px; margin-bottom: -20px;"><b> Follow us </b></p>
+            <ul class="sml">
+                <li> <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                 <li><a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a></li>
+             </ul>
+           
+     
+        </div>
+      </section>
+      <!--our team-->
+      <section class="main-heading">
+        <div class="text-center">
+            <h1 class=" text-uppercase mt-5" style="color: #518385;" ><b> OUR TEAM </b></h1>
+            <hr class="w-25  mx-auto">
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-evenly" >
+                <div class="col-3" >
+                    <div class="card" style="width: 18rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" id="team">
+                        <div class="card-image">
+                        <img src="images/person5.jpg" alt="" class="pic">
+                        </div>
+                        <h5 class="mt-3" style="color: #518385; margin-left: 90px; ">MISS JENNA</h1>
+                        <hr class="w-25 mx-auto" style="height: 3px; color: #518385;">
+                         <div class="card-body">
+                           <p class="card-text" style="color: #518385;"> <b> Web Developer </b></p>
+                           <p >Writing well designed, testable, efficient code by using best software development 
+                            practices. Creating website layout/user interfaces by using standard HTML/CSS practices.
+                            </p>
+                         </div>
+                       </div>
+                 </div>
+
+                 <div class="col-3" >
+                    <div class="card" style="width: 19rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" id="team">
+                        <div class="card-image">
+                        <img src="images/person6.jpg" alt="" class="pic" style="margin-left: 50px;">
+                        </div>
+                        <h5 class="mt-3" style="color: #518385; margin-left: 100px; ">MISS AREEJ</h1>
+                        <hr class="w-25 mx-auto" style="height: 3px; color: #518385;">
+                         <div class="card-body">
+                           <p class="card-text" style="color: #518385;"> <b> Web Designer</b></p>
+                           <p>A Web Designer, is responsible for designing the overall 
+                            layout and aesthetic for websites. Their duties include coding webpages or entire websites, 
+                            meeting with clients to review website templates.</p>
+                         </div>
+                       </div>
+                 </div>
+
+                 <div class="col-3" >
+                    <div class="card" style="width: 18rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" id="team">
+                        <div class="card-image">
+                        <img src="images/person7.webp" alt="" class="pic">
+                        </div>
+                        <h5 class="mt-3" style="color: #518385; margin-left: 90px; ">MISS BELLA</h1>
+                        <hr class="w-25 mx-auto" style="height: 3px; color: #518385;">
+                         <div class="card-body">
+                           <p class="card-text" style="color: #518385;"> <b> Marketting </b></p>
+                           <p >Experienced Marketers may have a few years of experience in sales, promotion, marketing, advertising or public relations. </p>
+                         </div>
+                       </div>
+                 </div>
+                 
+            </div>
+        </div>
+      </section>
+
+
+<!--our success-->
+      <section class="main-heading">
+        <div class="text-center">
+            <h1 class=" text-uppercase mt-5" style="color: #518385;" ><b> OUR SUCCESS </b></h1>
+            <hr class="w-25  mx-auto">
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-evenly" >
+                <div class="col-3" >
+                    <div class="card" style="width: 19rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" id="mission">
+                       <i class="fa fa-book" aria-hidden="true"></i>
+                       <h1 class="mt-3" style="color: #518385; text-shadow: 2px 2px 4px #a1eef5; margin-left: 60px; ">MISSION</h1>
+                       <hr class="w-25 mx-auto" style="height: 3px; color: #518385;">
+                        <div class="card-body">
+                          <p class="card-text">To explore the world around me, always learning new things,always searching for more
+                            ,always trusting the god.
+                          </p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 18rem;box-shadow: 0 5px 35px rgb(101, 104, 104);" id="mission">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                       <h1 class="mt-3" style="color: #518385; text-shadow: 2px 2px 4px #a1eef5; margin-left: 70px; ">VISSION</h1>
+                       <hr class="w-25 mx-auto" style="height: 3px; color: #518385;">
+                        <div class="card-body">
+                          <p class="card-text">Our vision for the future is to be the customer's first and best choice in the products and services we provide.</p>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="card" style="width: 20rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" id="mission">
+                        <i class="fa fa-trophy" aria-hidden="true"></i>
+                       <h1 class="mt-3" style="color: #518385; text-shadow: 2px 2px 4px #a1eef5; font-size: 40px; font-weight: 500; margin-left: 18px; ">ACHIEVEMENTS</h1>
+                       <hr class="w-25 mx-auto" style="height: 3px; color: #518385;">
+                        <div class="card-body">
+                          <p class="card-text">Every worthwhile accomplishment, big or little, has its stages of drudgery and triumph: a beginning, a struggle, and a victory.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+<!--review cards-->
+<section class="main-heading">
+    <div class="text-center">
+        <h1 class=" text-uppercase mt-5" style="color: #518385;" ><b> Reviews </b></h1>
+        <hr class="w-25  mx-auto">
+    </div>
+<div class="container mt-5">
+    <div class="row justify-content-evenly" >
+        <div class="col-3">
+            <div class="card" style="width: 15rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" class="img-fluid" id="reviews">
+                <div class="card-review">
+                <img src="images/person1.jpg"  alt="..." class="person">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Ella</h5>
+                  <p class="card-text">"You will have plenty of time to explore and see the incredible marine life."</p>
+                  <a href="#" class="btn " style="color: white; background-color: #518385;" >View More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-3" >
+            <div class="card" style="width: 15rem;  box-shadow: 0 5px 35px rgb(101, 104, 104);" class="img-fluid" id="reviews">
+                <div class="card-review">
+                <img src="images/person2.jpg "  alt="..." class="person">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Sam</h5>
+                  <p class="card-text">"The world's finest wilderness lies beneath the waves …"</p>
+                  <a href="#" class="btn " style="color: white; background-color: #518385; margin-top: 30px;" >View More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-3" >
+            <div class="card" style="width: 15rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" class="img-fluid" id="reviews">
+                <div class="card-review">
+                <img src="images/person3.jpg"   alt="..." class="person">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Steev</h5>
+                  <p class="card-text"> "Marine organisms do not care about international boundaries; they move where they will."</p>
+                  <a href="#" class="btn " style="color: white; background-color: #518385;" >View More</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-3">
+            <div class="card" style="width: 15rem; box-shadow: 0 5px 35px rgb(101, 104, 104);" class="img-fluid" id="reviews">
+                <div class="card-review">
+                <img src="images/person4.jpg"  alt="..." class="person">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Tris</h5>
+                  <p class="card-text">"It's a little-appreciated fact that most of the animals in our ocean make light."</p>
+                  <a href="#" class="btn "  style="color: white; background-color: #518385;" >View More</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+<!-- Footer  -->
+<footer class=" container-fluid my-5 mb-0 text-center text-lg-start "
+style=" background-size: contain; background-color: #a9cec4;overflow: hidden; overflow-x: hidden;">
+
+<!-- Section: Social media -->
+<div class="foot d-flex justify-content-center justify-content-lg-between p-4 border-bottom " >
+  <!-- Left -->
+  <div class="me-5 d-none d-lg-block">
+    <span><b>Get connected with us on social networks:</b></span>
+  </div>
+  <!-- Left -->
+
+  <!-- Right -->
+  <div>
+    <a href="https://www.facebook.com/profile.php?id=100085838613136" class="me-4 text-reset">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </a>
+    <a href="https://twitter.com/?lang=en" class="me-4 text-reset">
+      <ion-icon class="i" name="logo-twitter"></ion-icon>
+    </a>
+    <a href="https://www.dawateislami.net/downloads/islamic-apps/al-quran-translation-app?gclid=Cj0KCQjwsIejBhDOARIsANYqkD1pcx4fkne2n1cu9ZXD1fMqk_TQqkqXfuB9Z5PmeWrzkhTim2ZFw9AaAlZZEALw_wcB"
+      class="me-4 text-reset">
+      <ion-icon name="logo-google"></ion-icon>
+    </a>
+    <a href="https://instagram.com/muzammil____07?igshid=ZGUzMzM3NWJiOQ==" class="me-4 text-reset">
+      <ion-icon class="i" name="logo-instagram"></ion-icon>
+    </a>
+    <a href="www.aptech4@gmail.com" class="me-4 text-reset">
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="www.aptech@gmail.com" class="me-4 text-reset">
+      <ion-icon name="thumbs-up-sharp"></ion-icon>
+    </a>
+  </div>
+  <!-- Right -->
+</div>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="marina" style="overflow: hidden;" >
+  <div class="container text-center text-md-start mt-5">
+    <!-- Grid row -->
+    <div class="row mt-3">
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+        <!-- Content -->
+        <h6 class="text-uppercase fw-bold mb-4">
+
+          <h1>Marina-Fleet</h1>
+          The Pakistan Fleet Marine Forces (FMF) are combined general and special purpose forces within the
+          Pakistan Department of the Navy that perform offensive amphibious or expeditionary warfare and defensive
+          maritime employment
+        </h6>
+
+      </div>
+      <!-- Grid column -->
+
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4"></h6>
+        <p>
+          <p span class="sign">&#x27A4;</span><a href="FAQs.html" class="text-reset">Home </a>
+        </p>
+        <p>
+          <p span class="sign">&#x27A4;</span><a href="about-us.html" class="text-reset">About us</a>
+        </p>
+        <p>
+          <p span class="sign">&#x27A4;</span><a href="#" class="text-reset">Contact us</a>
+        </p>
+        <p>
+          <p span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Site map .</a>
+        </p>
+        <p span class="sign">&#x27A4;</span><a href="site-map.html" class="text-reset">Feed back</a>
+        </p>
+      </div>
+      <!-- Grid column -->
+
+
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+        <!-- Links -->
+        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+        <p>
+          <ion-icon name="globe-sharp"></ion-icon></i>ALL OVER PAKISTAN
+        </p>
+        <p>
+          <ion-icon name="logo-android"></ion-icon></i><a href="nihasiddiqui98gmail.com"
+            class="text-reset">www.aptechnn@gmail.com</a>
+        </p>
+        <p><ion-icon name="call-outline"></ion-icon> + 92 309 210242453</p>
+        <p><ion-icon name="call-outline"></ion-icon>+ 92 334 820976525</p>
+      </div>
+      <!-- Grid column -->
+    </div>
+    <!-- Grid row -->
+  </div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
+
+  <ion-icon name="cloud-offline-sharp"></ion-icon>
+  <a class="text-reset fw-bold" href="https://mdbootstrap.com/">© Copyright Marina-Fleet.<br>
+    All Rights Reserved <br>
+    Designed by Marina Fleet</a>
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="js/jquery.js"></script>
+
+</body>
+
+</html>
