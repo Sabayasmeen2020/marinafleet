@@ -8,7 +8,7 @@ $.get("js/data.json", function(response){
             $("#details").text(i.details);
             $("#name").text(i.name);
             $("#price").text(i.price);
-
+            $("#pdf").attr('href',i.pdf);
         }
     }
 })
