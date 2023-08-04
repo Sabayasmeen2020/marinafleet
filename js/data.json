@@ -1,12 +1,12 @@
 [
-    {"id":"1","name":"DIAMOND CRUISE","price":"15007$","rent":"1500$","image":"cruise (1).jpg","details":"It's a beauty and fascinating to see. Anchor Handling, loa 63.6m, beam 13.3m, BP 100t, long white "}
-    , {"id":"5","name":"CARPE DIEM","price":"50058$","rent":"1967$","image":"cruise (8).jpg","details":"The cruise was built in 2013, its hull is made of steel with fantastic face paint."}
-  , {"id":"3","name":"WAVY WAVE","price":"21357$","rent":"2343$","image":"cruise (6).jpg","details":"its also called sprinkal of colors  SPEED: MAX 25KNOTS (LOADED),CATAMARAN 2009 HK BUILT"}
-  , {"id":"4","name":"SERENITY","price":"61367$","rent":"5782$","image":"cruise (5).jpg","details":"1996 JAPAN BUILT CONTAINER VESSEL Saiki HI Japan Class NK Ss due 22/2/22 171.59 "}
-  , {"id":"2","name":"ANDIAMO","price":"57057$","rent":"2734$","image":"cruise (10).jpg","details":"diamond shape 2010 JAPAN BUILT HANDYMAX Built 3/201814 m3 baleCranes 4X30T"}
-  , {"id":"6","name":"MY WAY","price":"26757$","rent":"3732$","image":"cruise (3).jpg","details":"disco lights eye-catchy interior Built 3/2010 Saiki HI Japan Class"}
-  , {"id":"7","name":"LADY FACE","price":"600567$","rent":"8376$","image":"cruise (11).jpg","details":"Built 2012 Sungdong Shipbuilding S.Korea 2012 KOREA BUILT CAPESIZE"} 
-  , {"id":"8","name":"ENDLESS","price":"25067$","rent":"2288$","image":"cruise (4).jpg","details":"m loa 27m bm5 HH 40,298 m3 gr 39,814 m3 baleCranes 4X30T It's in perfect condition"}
-  , {"id":"9","name":"DESTINY","price":"63557$","rent":"2228$","image":"cruise (9).jpg","details":"It's a beauty and fascinating to see. Anchor Handling Tug Supply Vessel  blt 1975, Norway, loa 63.6m,"}
+    {"id":"1","name":"DIAMOND CRUISE","price":"15007$","rent":"1500$","image":"cruise (1).jpg","details":"It's a beauty and fascinating to see. Anchor Handling, loa 63.6m, beam 13.3m, BP 100t, long white ","pdf":"luxury .pdf"}
+    , {"id":"5","name":"CARPE DIEM","price":"50058$","rent":"1967$","image":"cruise (8).jpg","details":"The cruise was built in 2013, its hull is made of steel with fantastic face paint.","pdf":"Luxury diamond.pdf"}
+  , {"id":"3","name":"WAVY WAVE","price":"21357$","rent":"2343$","image":"cruise (6).jpg","details":"its also called sprinkal of colors  SPEED: MAX 25KNOTS (LOADED),CATAMARAN 2009 HK BUILT","pdf":"luxury .pdf"}
+  , {"id":"4","name":"SERENITY","price":"61367$","rent":"5782$","image":"cruise (5).jpg","details":"1996 JAPAN BUILT CONTAINER VESSEL Saiki HI Japan Class NK Ss due 22/2/22 171.59 ","pdf":"luxury 3.pdf"}
+  , {"id":"2","name":"ANDIAMO","price":"57057$","rent":"2734$","image":"cruise (10).jpg","details":"diamond shape 2010 JAPAN BUILT HANDYMAX Built 3/201814 m3 baleCranes 4X30T","pdf":"luxury .pdf"}
+  , {"id":"6","name":"MY WAY","price":"26757$","rent":"3732$","image":"cruise (3).jpg","details":"disco lights eye-catchy interior Built 3/2010 Saiki HI Japan Class","pdf":"luxury .pdf"}
+  , {"id":"7","name":"LADY FACE","price":"600567$","rent":"8376$","image":"cruise (11).jpg","details":"Built 2012 Sungdong Shipbuilding S.Korea 2012 KOREA BUILT CAPESIZE","pdf":"luxury .pdf"} 
+  , {"id":"8","name":"ENDLESS","price":"25067$","rent":"2288$","image":"cruise (4).jpg","details":"m loa 27m bm5 HH 40,298 m3 gr 39,814 m3 baleCranes 4X30T It's in perfect condition","pdf":"luxury .pdf"}
+  , {"id":"9","name":"DESTINY","price":"63557$","rent":"2228$","image":"cruise (9).jpg","details":"It's a beauty and fascinating to see. Anchor Handling Tug Supply Vessel  blt 1975, Norway, loa 63.6m,","pdf":"luxury .pdf"}
  
 ]
