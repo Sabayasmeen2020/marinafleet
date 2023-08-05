@@ -1,11 +1,11 @@
 [
-    {"id":"1","name":"CLASSY MILIT","price":"15007$","rent":"1507$","image":"yacht (1).jpg","details":"It's a beauty and fascinating to see. Anchor Handling, loa 63.6m, beam 13.3m, BP 100t, long white "}
-    , {"id":"2","name":"GOLD BOLD","price":"51275$","rent":"3566$","image":"yacht (8).jpg","details":"The cruise was built in 2013, its hull is made of steel with fantastic face paint."}
-  , {"id":"3","name":"BLUE DAY","price":"25006$","rent":"1567$","image":"yacht (7).jpg","details":"its also called sprinkal of colors  SPEED: MAX 25KNOTS (LOADED),CATAMARAN 2009 HK BUILT"}
-  , {"id":"4","name":"AGRENT305","price":"12656$","rent":"1678$","image":"yacht (4).jpg","details":"1996 JAPAN BUILT CONTAINER VESSEL Saiki HI Japan Class NK Ss due 22/2/22 171.59 "}
-  , {"id":"5","name":"DREAMY","price":"55657$","rent":"7775$","image":"yacht (5).jpg","details":"diamond shape 2010 JAPAN BUILT HANDYMAX Built 3/201814 m3 baleCranes 4X30T"}
-  , {"id":"6","name":"BRONZE","price":"22356$","rent":"1567$","image":"yacht (6).jpg","details":"disco lights eye-catchy interior Built 3/2010 Saiki HI Japan Class"}
-  , {"id":"7","name":"BLACK FOG","price":"69057$","rent":"3423$","image":"yacht (2).jpg","details":"Built 2012 Sungdong Shipbuilding S.Korea 2012 KOREA BUILT CAPESIZE"} 
-  , {"id":"8","name":"LAYERS 101","price":"29337$","rent":"9866$","image":"yacht (3).jpg","details":"m loa 27m bm5 HH 40,298 m3 gr 39,814 m3 baleCranes 4X30T It's in perfect condition"}
-  , {"id":"5","name":"HAPPY RIDE","price":"55234$","rent":"9595$","image":"yacht (9).jpg","details":"diamond shape 2010 JAPAN BUILT HANDYMAX Built 3/201814 m3 baleCranes 4X30T"}
+    {"id":"1","name":"CLASSY MILIT","price":"15007$","rent":"1507$","image":"z1.jpeg","details":"It's a beauty and fascinating to see. Anchor Handling, loa 63.6m, beam 13.3m, BP 100t, long white "}
+    , {"id":"2","name":"GOLD BOLD","price":"51275$","rent":"3566$","image":"z2.jpeg","details":"The cruise was built in 2013, its hull is made of steel with fantastic face paint."}
+  , {"id":"3","name":"GLOD NIGHT","price":"25006$","rent":"1567$","image":"z3.jpeg","details":"its also called sprinkal of colors  SPEED: MAX 25KNOTS (LOADED),CATAMARAN 2009 HK BUILT"}
+  , {"id":"4","name":"ARTIFICIAL GANG","price":"12656$","rent":"1678$","image":"z4.jpeg","details":"1996 JAPAN BUILT CONTAINER VESSEL Saiki HI Japan Class NK Ss due 22/2/22 171.59 "}
+  , {"id":"5","name":"DEAREST QUEEN","price":"55657$","rent":"7775$","image":"z5.jpeg","details":"diamond shape 2010 JAPAN BUILT HANDYMAX Built 3/201814 m3 baleCranes 4X30T"}
+  , {"id":"6","name":"METTALIC","price":"22356$","rent":"1567$","image":"z6.jpeg","details":"disco lights eye-catchy interior Built 3/2010 Saiki HI Japan Class"}
+  , {"id":"7","name":"SMOKY FOG","price":"69057$","rent":"3423$","image":"z7.jpeg","details":"Built 2012 Sungdong Shipbuilding S.Korea 2012 KOREA BUILT CAPESIZE"} 
+  , {"id":"8","name":"BROWNY RIDE","price":"29337$","rent":"9866$","image":"z8.jpeg","details":"m loa 27m bm5 HH 40,298 m3 gr 39,814 m3 baleCranes 4X30T It's in perfect condition"}
+  , {"id":"5","name":"SHARP DIAMOND","price":"55234$","rent":"9595$","image":"z9.jpeg","details":"diamond shape 2010 JAPAN BUILT HANDYMAX Built 3/201814 m3 baleCranes 4X30T"}
 ]
