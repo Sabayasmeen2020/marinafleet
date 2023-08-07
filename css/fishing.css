@@ -112,11 +112,11 @@ p{
     width: .639rem;
 }
 ::-webkit-scrollbar-track{
-    background-color:  #80b9ca;
+    background-color:  #80b9ca8c;
 
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(10, 10, 10);
+    background-color: rgba(10, 10, 10, 0.562);
 }
 
 h6{
@@ -203,3 +203,11 @@ h3{
 .card-title{
     text-shadow: 2px 2px 1px black;
 }
+
+body {
+  background: #DFC2F2;
+    background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+    background-attachment: fixed;	
+    background-size: cover;
+    
+    }

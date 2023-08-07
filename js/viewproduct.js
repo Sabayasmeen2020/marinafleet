@@ -1,6 +1,6 @@
 var id = sessionStorage.getItem('productId');
 console.log(id);
-$.get("js/data.json", function(response){
+$.get("js/data1.json", function(response){
     for(i of response){
         if(i.id == id){
             $("#image").attr("src","images/"+i.image);
@@ -13,7 +13,7 @@ $.get("js/data.json", function(response){
 })
 var id = sessionStorage.getItem('productId');
 console.log(id);
-$.get("js/data1.json", function(response){
+$.get("js/data.json", function(response){
     for(i of response){
         if(i.id == id){
             $("#image").attr("src","images/"+i.image);

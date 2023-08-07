@@ -95,6 +95,13 @@ body {
   box-sizing: border-box;
 }
 
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+	background-attachment: fixed;	
+	background-size: cover;
+  
+	}
 .app {
   max-width: 1200px;
   margin-inline: auto;
@@ -195,10 +202,10 @@ body {
   </script>
   <div id="app" class="app">
     <div>
-      <span class="hashtag" v-for="tag in hashtags" :key="tag" @click="filterImages(tag)">{{ tag }}</span>
+      <span class="hashtag responsive" v-for="tag in hashtags" :key="tag" @click="filterImages(tag)">{{ tag }}</span>
     </div>
     
-    <div class="gallery">
+    <div class="gallery responsive">
       <div class="image resposive" v-for="(image, index) in filteredImages" :key="index" :style="{ backgroundImage: 'url(' + image.url + ')', opacity: 1 }" @click="openImage(index)"></div>
     </div>
     <div id="fullscreenImage" v-if="fullscreenImageUrl" @click="fullscreenImageUrl = null">
