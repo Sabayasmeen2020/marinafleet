@@ -8,5 +8,5 @@
    , {"id":"7","name":"RMS LUSITANIA","price":"56.00$","image":"s7.jpeg","details":"Launch year: 1906 Builder: John Brown & Co‎, ‎Clydebank‎, Scotland Length: 240 m"}
    , {"id":"8","name":"RMS TITANIC","price":"43.78$","image":"s8.jpeg","details":"Launch year: 1911 Builder: Harland and Wolff shipyard for the British Shipping Company White Star Line Length: 269 m"}
    , {"id":"9","name":"USS ARIZINA","price":"81.87$","image":"s9.jpeg","details":"Launch year: 1915 Builder: Brooklyn Navy Yard, New York Length: 185 m"}
-   , {"id":"10","name":"BATTLE SHIP BICMARCK","price":"6543","image":"s10.jpeg","details":"Launch year: 1939 Builder: Blohm & Voss shipyard, Hamburg Length: 251 m"}
+  
    ]
