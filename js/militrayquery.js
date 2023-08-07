@@ -15,7 +15,7 @@ $(document).ready(function(){
     <h5 class="card-title" >${i.name}</h5>
       <p class="card-text1">${i.price}</p>
         <p class="card-text">${i.details}</p>
-        <button class="btm" onclick="militrayviewproduct(${i.id})">DETAILS</button> </div>
+        <button class="btm" onclick="viewproduct(${i.id})">DETAILS</button> </div>
   </div>
 </div>
 </div>

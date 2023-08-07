@@ -1,4 +1,5 @@
-[{"id":"1","name":"frigate","price":"15007$","rent":"1500$","image":"m1.jpg","details":"First submarine was built in France and under the Transfer of Technology."}
+[
+    {"id":"1","name":"frigate","price":"15007$","rent":"1500$","image":"m1.jpg","details":"First submarine was built in France and under the Transfer of Technology."}
 , {"id":"2","name":"destroyer","price":"50058$","rent":"1967$","image":"m8.jpg","details":"These submarines were originally intended to be sold to South Africa,  they were sold to Pakistan"}
 , {"id":"3","name":"monitor","price":"21357$","rent":"2343$","image":"m11.jpg","details":"Eight submarines are on order -  China by the China Shipbuilding Trading Company."}
 , {"id":"4","name":"SERENITY","price":"61367$","rent":"5782$","image":"m8.jpeg","details":"The first four submarines are expected to be delivered by 2023. "}
