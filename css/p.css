@@ -289,9 +289,25 @@ h3{
       background-attachment: fixed;	
       background-size: cover;
       
-      }
+  }
 
-      .responsive {
-        max-width: 100%;
-        height: auto;
-      }
+  /* responsive */
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+  .parallax .responsive{
+    width:100%;
+    height:auto;
+  }
+  .container{
+    width:100%;
+    height:auto;
+  }
+  @media screen and (max-width: 500px){
+    .responsive{
+      width:100%;
+      height:auto;
+    }
+  }
