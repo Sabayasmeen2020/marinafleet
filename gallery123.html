@@ -71,11 +71,11 @@
       </section>
        <!-- BANNER -->
     
-    <img src="images/gallery banner.jpg" alt="" style="width: 100%;">
+    <img src="images/gallery banner.jpg" alt="" style="width: 100%;" class="responsive">
     <br><br><br>
-         <h2 style="display: flex; justify-content: center; align-items: center;"><i>DISCOVER THE BEST CRUISE SHIPS</i></h2>
-         <h1 style="display: flex; justify-content: center; align-items: center;" ><i>OUR EXCLUSIVE GALLERY</i></h1><br>
-         <P  style="display: flex; justify-content: center; align-items: center; margin-left: 80px;  margin-right: 80px;"><u>There are so many reasons to get excited about a Royal Caribbean® cruise. Choose from itineraries that take you to top-rated vacation destinations, from sun-soaked Caribbean isles to ancient temples in Asia and everywhere in between. Make the most out of every moment at sea while traveling onboard the world s best cruise ship, dazzling entertainments , as well as next-level dining and unmatched activities for all kinds of adventure-seekers. No matter , this is a fleets filled with incredible feats.</u>
+         <h2 class="responsive" style="display: flex; justify-content: center; align-items: center;"><i>DISCOVER THE BEST CRUISE SHIPS</i></h2>
+         <h1 class="responsive" style="display: flex; justify-content: center; align-items: center;" ><i>OUR EXCLUSIVE GALLERY</i></h1><br>
+         <P  class="responsive" style="display: flex; justify-content: center; align-items: center; margin-left: 80px;  margin-right: 80px;"><u>There are so many reasons to get excited about a Royal Caribbean® cruise. Choose from itineraries that take you to top-rated vacation destinations, from sun-soaked Caribbean isles to ancient temples in Asia and everywhere in between. Make the most out of every moment at sea while traveling onboard the world s best cruise ship, dazzling entertainments , as well as next-level dining and unmatched activities for all kinds of adventure-seekers. No matter , this is a fleets filled with incredible feats.</u>
  
          </P>
        
@@ -173,6 +173,16 @@ body {
 .nav-left {
   left: 2%;
 }
+.responsive{
+  .responsive {
+  width: 100%;
+  height: auto;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+}
 
 .nav-right {
   right: 2%;
@@ -189,7 +199,7 @@ body {
     </div>
     
     <div class="gallery">
-      <div class="image" v-for="(image, index) in filteredImages" :key="index" :style="{ backgroundImage: 'url(' + image.url + ')', opacity: 1 }" @click="openImage(index)"></div>
+      <div class="image resposive" v-for="(image, index) in filteredImages" :key="index" :style="{ backgroundImage: 'url(' + image.url + ')', opacity: 1 }" @click="openImage(index)"></div>
     </div>
     <div id="fullscreenImage" v-if="fullscreenImageUrl" @click="fullscreenImageUrl = null">
       <img :src="fullscreenImageUrl" />

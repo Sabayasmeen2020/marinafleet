@@ -283,3 +283,8 @@ h3{
       background-size: cover;
       
       }
+
+      .responsive {
+        max-width: 100%;
+        height: auto;
+      }
