@@ -1,0 +1,293 @@
+.dropdown-menu{
+    background-color: rgba(83, 170, 182, 0.432);
+   box-shadow: 1px 2px 10px #000000;
+   text-shadow: 0.075px 0.076px 0.075px black;
+   z-index: 999;
+}
+
+.header-wrapper{
+position: contain;
+padding: .9380rem;
+background-color:    #a9cec4;
+box-shadow: 0.5rem .375rem -0.375rem rgb(0, 0, 0)  ;
+-webkit-transition:  background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+width: 100%;
+box-shadow: 3px 3px 12px black;
+/* overflow: hidden; */
+
+}
+.header-wrapper .navbar-toggler{
+border: 0;
+color:#518385 ;
+line-height: 2;
+}         
+.header-wrapper .navbar-toggler:focus{
+color: rgba(0, 0, 0, 0.5);
+}
+.header-wrapper .nav-item{
+margin: 0 .625rem;
+}
+.header-wrapper .nav-item .nav-link{
+font-size: 1.25rem;
+font-weight: 500;
+display: inline-block;
+color: #518385;
+text-shadow: 0.25px 0.25px 0.25px black;
+
+}
+.header-wrapper .nav-item .nav-link:hover,
+.header-wrapper .nav-item .nav-link.active{
+color: #0e606e;
+text-decoration: 1px 1px 1px ;
+/* background-color: rgb(9, 92, 92);  */
+text-shadow: 3px 3px 5px rgb(253, 255, 255);
+font-size: 1.25rem;
+
+}
+
+.container{
+      margin-top: 30px;}
+
+ .card{
+    margin-left: auto;
+    margin-top: 5px;
+    
+    
+ }
+
+ .hh{
+    text-shadow:3px 3px 10px #0e606e;
+    /* text-decoration:3px solid underline rgb(255, 242, 128); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(6, 10, 10);
+ }
+
+
+.btm{
+    background-color: rgb(0, 2, 2);
+    color: #ffffff;
+    box-shadow: 1px 1px 7px rgb(24, 129, 120);
+    margin-top: 20px;
+    height: 30px;
+    width: 50%;
+    transition:transform .5s;
+    border-radius: 5px;
+}
+.btm:hover{
+    color: #f0f0f0;
+    background-color: #0e606e;
+    transform: translateY(-8px);
+}
+h5{
+    text-align: center;
+    text-transform: capitalize;
+}
+h5:hover{
+    text-decoration:1px solid underline;
+}
+p{
+    text-align: center;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+.btn3{
+    align-items: center;
+    width: 15%;
+    background-color: rgb(165, 203, 236);
+    border-radius: 10px;
+    margin-left: 480px;
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+    text-transform: capitalize;
+
+}
+::-webkit-scrollbar{
+    width: .639rem;
+}
+::-webkit-scrollbar-track{
+    background-color:  #80b9ca;
+
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(10, 10, 10);
+}
+
+h6{
+    align-items: center;
+    color: aliceblue;
+    display: flex;
+    justify-self: center;
+    margin-left: 550px;
+}
+h3{
+    align-items: center;
+    color: aliceblue;
+    display: flex;
+    justify-self: center;
+    margin-left: 600px;
+    font-size: 23px;
+
+}
+
+
+.flip-card {
+    background-color: rgba(0, 0, 0, 0);
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-left: 50px;
+    overflow: hidden;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    box-shadow: 6px 6px 13px rgba(0, 0, 0, 0.5);
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color:#a9cec4;
+    color: white;
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 16px rgba(0, 0, 0, 0.514);
+
+  }
+  .card-title{
+    font-size: 35px;
+    margin-top: 30px;
+  }
+
+.card-title{
+    text-shadow: 2px 2px 1px black;
+}
+.card-text1{
+    font-size: 22px ;
+    padding-top: 12px;
+    padding-bottom: 1px;
+    background-color: #ffffff8e;
+    box-shadow: 0.5px 0.5px 5px rgb(79, 184, 170);
+}
+  
+  
+  #projects .parallax {
+     background-image: url(../images/pexels-arvid-knutsen-3511307.jpg);
+    width: 100%;
+    height: 70vh;
+    /* position: relative; */
+    background-attachment: fixed;
+    /* background-position: 50% 50%; */
+    background-size: cover;
+    /* z-index: -999; */
+  
+ 
+  }
+  #projects h2{
+    font-size:20px ;
+    color:rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    margin: 0 0 10px;
+   opacity: 0;
+   animation:fadeInLeft 0.5s ease forwards;
+   text-transform: capitalize;
+   margin-left:530px;
+   text-decoration: 1px solid underline black;
+}
+
+#projects p{
+    font-size:55px ;
+    color:  rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgb(255, 255, 255);
+    margin: 0;
+    animation:fadeInRight 0.8s ease forwards;
+    text-transform: capitalize;
+    background-color: #ffffff6c;
+}
+#projects.parallax.active h2{
+ animation:fadeInLeft 0.5s ease forwards;
+}
+
+
+@keyframes fadeInLeft{
+   0%{
+       opacity: 0;
+       transform: translateX(-30px);
+   }
+   100%{
+       opacity: 1;
+       transform: translateX(0px);
+   }
+   }
+
+   @keyframes fadeInRight{
+   0%{
+       opacity: 0;
+       transform: translateX(30px);
+   }
+   100%{
+       opacity: 1;
+       transform: translateX(0px);
+   }
+   }
+  section:nth-child(1) {
+    background-image: var(--image-one);
+
+  }
+  .foot{
+    background-color: #80b9ca18;
+  }
+  
+  .view-project {
+    background-color: white;
+    padding: .5rem 3rem;
+    border-radius: 3rem;
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    font-family: system-ui;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-75%);
+    cursor: pointer;
+    box-shadow: 0 5px 0 rgba(0,0,0,.5);
+ 
+  }
+  footer{
+    background-color: #80b9ca;
+  }
+  body {
+    background: #DFC2F2;
+      background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+      background-attachment: fixed;	
+      background-size: cover;
+      
+      }
