@@ -25,7 +25,7 @@ $(document).ready(function(){
   })
 })
 $(document).ready(function(){
-$.get("js/data1.json",function(response){
+$.get("js/militraydata.json",function(response){
     for ( i of response) {
         $("#cardBox1").append(`
         <div class="col-md-4" >
