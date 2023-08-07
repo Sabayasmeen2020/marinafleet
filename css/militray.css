@@ -1,6 +1,7 @@
- /* header css start*/
+
+/* header css start*/
  
- .dropdown-menu{
+.dropdown-menu{
   background-color: rgba(83, 170, 182, 0.432);
  box-shadow: 1px 2px 10px #000000;
  text-shadow: 0.075px 0.076px 0.075px black;
@@ -108,14 +109,17 @@ p{
   text-transform: capitalize;
 
 }
+::-webkit-scrollbar{
+  width: .639rem;
+}
+::-webkit-scrollbar-track{
+  background-color:  #f1f1f1;
 
-body {
-  background: #DFC2F2;
-    background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
-    background-attachment: fixed;	
-    background-size: cover;
-    
-    }
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgba(10, 10, 10, 0.438);
+}
+
 h6{
   align-items: center;
   color: aliceblue;
@@ -184,19 +188,27 @@ h3{
   margin-top: 30px;
 }
 .container12{
-  height: 200px;
+  height: 400px;
   width: auto;
   
   
 
 }
 .banner{
- background-image: url(images/z10.jpeg);
+  background-image: url(../images/s9.jpeg);
   background-size:cover;
   background-repeat: no-repeat;
-  height: 300px;
+  height: 500px;
   box-shadow: 3px 3px 12px black;
 }
 .card-title{
   text-shadow: 2px 2px 1px black;
 }
+
+body {
+  background: #DFC2F2;
+    background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+    background-attachment: fixed;	
+    background-size: cover;
+    
+    }
