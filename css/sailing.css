@@ -187,17 +187,17 @@ h3{
   margin-top: 30px;
 }
 .container12{
-  height: 300px;
+  height: 400px;
   width: auto;
   
   
 
 }
 .banner{
-  background-image: url(../images/s10.jpeg);
+  background-image: url(../images/s9.jpeg);
   background-size:cover;
   background-repeat: no-repeat;
-  height: 400px;
+  height: 500px;
   box-shadow: 3px 3px 12px black;
 }
 .card-title{
