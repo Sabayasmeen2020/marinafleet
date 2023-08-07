@@ -1,0 +1,12 @@
+[
+    {"id":"1","name":"SANTA MARIA","price":"78.47$","image":"s1.jpeg","details":"launch year 1460 Builder Juan de la Cosa Length 24 m"}
+   , {"id":"2","name":"MAY FLOWER","price":"75.90$","image":"s2.png","details":"Launch year: 1607 Builder: Christopher Jones Length: 33 m  on May 6, 1621."}
+   , {"id":"3","name":"HMS VICTORY","price":"678$","image":"s3.jpeg","details":"Launch year: 1765 Builder: Chatham Dockyard Length: 57 m ."}
+   , {"id":"4","name":"USS CONSTITUTION","price":"44.87$","image":"s4.jpeg","details":"Launch year: 1797 Builder: Edmund Hartt’s shipyard, Boston Length: 93 m"}
+   , {"id":"5","name":"SMS BEAGLE","price":"98.55","image":"s5.png","details":"Launch year: 1820 Length: 28 m"}
+   , {"id":"6","name":"FLYING CLOND","price":"78.17$","image":"s6.jpg","details":" Launch year: 1851 Builder: Donald McKay of East Boston, Massachusetts Length: 69 m."}
+   , {"id":"7","name":"RMS LUSITANIA","price":"56.00$","image":"s7.jpeg","details":"Launch year: 1906 Builder: John Brown & Co‎, ‎Clydebank‎, Scotland Length: 240 m"}
+   , {"id":"8","name":"RMS TITANIC","price":"43.78$","image":"s8.jpeg","details":"Launch year: 1911 Builder: Harland and Wolff shipyard for the British Shipping Company White Star Line Length: 269 m"}
+   , {"id":"9","name":"USS ARIZINA","price":"81.87$","image":"s9.jpeg","details":"Launch year: 1915 Builder: Brooklyn Navy Yard, New York Length: 185 m"}
+   , {"id":"10","name":"BATTLE SHIP BICMARCK","price":"6543","image":"s10.jpeg","details":"Launch year: 1939 Builder: Blohm & Voss shipyard, Hamburg Length: 251 m"}
+   ]
