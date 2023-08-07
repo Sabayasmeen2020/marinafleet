@@ -105,16 +105,8 @@ p{
     text-transform: capitalize;
 
 }
-::-webkit-scrollbar{
-    width: .639rem;
-}
-::-webkit-scrollbar-track{
-    background-color:  #80b9ca;
 
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgb(10, 10, 10);
-}
+
 
 h6{
     align-items: center;
