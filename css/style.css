@@ -479,4 +479,28 @@ font-family: 'EB Garamond', serif;
 .product-image:hover img {transition: all 0.3s ease-out;}
 .product-image:hover img {transform: scale(1.2, 1.2);}
 
+/* view more button*/
 
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #247c6e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-left: 690px;
+}
+
+.button:hover {background-color: #0e484f}
+
+.button:active {
+  background-color: grey #0e484f;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
