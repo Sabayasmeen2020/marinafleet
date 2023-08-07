@@ -71,11 +71,11 @@
       </section>
        <!-- BANNER -->
     
-    <img src="images/gallery banner.jpg" alt="" style="width: 100%;">
+    <img src="images/gallery banner.jpg" alt="" style="width: 100%;" class="responsive">
     <br><br><br>
-         <h2 style="display: flex; justify-content: center; align-items: center;"><i>DISCOVER THE BEST CRUISE SHIPS</i></h2>
-         <h1 style="display: flex; justify-content: center; align-items: center;" ><i>OUR EXCLUSIVE GALLERY</i></h1><br>
-         <P  style="display: flex; justify-content: center; align-items: center; margin-left: 80px;  margin-right: 80px;"><u>There are so many reasons to get excited about a Royal Caribbean® cruise. Choose from itineraries that take you to top-rated vacation destinations, from sun-soaked Caribbean isles to ancient temples in Asia and everywhere in between. Make the most out of every moment at sea while traveling onboard the world s best cruise ship, dazzling entertainments , as well as next-level dining and unmatched activities for all kinds of adventure-seekers. No matter , this is a fleets filled with incredible feats.</u>
+         <h2 class="responsive" style="display: flex; justify-content: center; align-items: center;"><i>DISCOVER THE BEST CRUISE SHIPS</i></h2>
+         <h1 class="responsive" style="display: flex; justify-content: center; align-items: center;" ><i>OUR EXCLUSIVE GALLERY</i></h1><br>
+         <P  class="responsive" style="display: flex; justify-content: center; align-items: center; margin-left: 80px;  margin-right: 80px;"><u>There are so many reasons to get excited about a Royal Caribbean® cruise. Choose from itineraries that take you to top-rated vacation destinations, from sun-soaked Caribbean isles to ancient temples in Asia and everywhere in between. Make the most out of every moment at sea while traveling onboard the world s best cruise ship, dazzling entertainments , as well as next-level dining and unmatched activities for all kinds of adventure-seekers. No matter , this is a fleets filled with incredible feats.</u>
  
          </P>
        
@@ -94,7 +94,17 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
+url{
+  max-width: 100%;
+  height: auto;
+}
+body {
+background: #DFC2F2;
+	background-image: linear-gradient( to right, #ffffb3,#ffe6e6);
+	background-attachment: fixed;	
+	background-size: cover;
+  
+	}
 .app {
   max-width: 1200px;
   margin-inline: auto;
@@ -107,6 +117,7 @@ body {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  height:auto;
 }
 
 .image {
@@ -131,6 +142,7 @@ body {
   opacity: 0.7;
   font-size:28px;
   bottom:30;
+  height:auto;
 }
 
 .hashtag:hover {
@@ -147,11 +159,12 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.8);
+  height:auto;
 }
 
 #fullscreenImage img {
   max-width: 90%;
-  max-height: 90%;
+  height:auto;
   cursor: zoom-out;
 }
 
@@ -164,6 +177,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   cursor: pointer;
+  height:auto;
 }
 
 .fullscreen-nav:hover {
@@ -173,6 +187,11 @@ body {
 .nav-left {
   left: 2%;
 }
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .nav-right {
   right: 2%;
@@ -185,11 +204,11 @@ body {
   </script>
   <div id="app" class="app">
     <div>
-      <span class="hashtag" v-for="tag in hashtags" :key="tag" @click="filterImages(tag)">{{ tag }}</span>
+      <span class="hashtag responsive" v-for="tag in hashtags" :key="tag" @click="filterImages(tag)">{{ tag }}</span>
     </div>
     
-    <div class="gallery">
-      <div class="image" v-for="(image, index) in filteredImages" :key="index" :style="{ backgroundImage: 'url(' + image.url + ')', opacity: 1 }" @click="openImage(index)"></div>
+    <div class="gallery responsive">
+      <div class="image resposive" v-for="(image, index) in filteredImages" :key="index" :style="{ backgroundImage: 'url(' + image.url + ')', opacity: 1 }" @click="openImage(index)"></div>
     </div>
     <div id="fullscreenImage" v-if="fullscreenImageUrl" @click="fullscreenImageUrl = null">
       <img :src="fullscreenImageUrl" />
