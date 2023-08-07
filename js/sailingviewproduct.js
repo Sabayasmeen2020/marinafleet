@@ -1,6 +1,6 @@
 var id = sessionStorage.getItem('productId');
 console.log(id);
-$.get("js/data.json", function(response){
+$.get("js/sailing.json", function(response){
     for(i of response){
         if(i.id == id){
             $("#image").attr("src","images/"+i.image);
