@@ -292,7 +292,7 @@ h3{
   }
 
   /* responsive */
-
+/* 
   .responsive {
     max-width: 100%;
     height: auto;
@@ -310,4 +310,24 @@ h3{
       width:100%;
       height:auto;
     }
+  } */
+
+  @media (max-width: 991px) {
+    .container{
+       height:auto ;
+       width: 500px;
+    }
+    .row{
+      height:auto ;
+      width: 500px;
+   }
+   .parallax{
+    height:auto ;
+    width: 500px;
+ }
+ .para .responsive{
+  height:auto ;
+  width: 500px;
+}
+  
   }
